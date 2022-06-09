@@ -77,8 +77,8 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
       
-    - name: mkdir mount
-      run: cd openwrt && mkdir -p files/etc/hotplug.d/block && cd files/etc/hotplug.d/block && curl -fsSL https://raw.githubusercontent.com/281677160/openwrt-package/usb/block/10-mount
+#     - name: mkdir mount
+#       run: cd openwrt && mkdir -p files/etc/hotplug.d/block && cd files/etc/hotplug.d/block && curl -fsSL https://raw.githubusercontent.com/281677160/openwrt-package/usb/block/10-mount
        
     - name: Load custom configuration
       run: |
